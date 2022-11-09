@@ -55,11 +55,6 @@ i{
     margin-right: 12px;
 }
 
-/* i{
-    font-size: 20px;
-    margin-right: 10px;
-} */
-
 #container--main{
     max-width: 700px;
     margin: 0 auto;
@@ -93,7 +88,6 @@ i{
 #wrapper--hero{
     display: flex;
     align-items: center;
-    /* gap: 2em; */
 }
 
 #wrapper--hero i{
@@ -103,17 +97,11 @@ i{
 #wrapper--hero .mail{
     display: flex;
     align-items: center;
-    /* gap: 2em; */
 }
 
 .mail p{
     color: var(--mainTextColor);
 }
-
-/* #wrapper--hero i{
-    font-size:40px;
-    margin-right: 10px;
-} */
 
 #bio, a{
     font-weight: 300;
@@ -138,16 +126,6 @@ i{
     border-radius: 5%;
     margin-right: 25px;
 }
-/* 
-#mail{
-    color: var(--mainTextColor);
-} */
-
-/* #email i{
-    color: var(--mainLinkColor-dark);
-    margin-right: 10px;
-    
-} */
 
 #socials--list{
     display: flex;
@@ -162,9 +140,8 @@ i{
     font-size: 1.2em;
     transition: 0.3s;
     border: solid 2px;
-    padding: 8px;
+    padding: 3px;
     /* background-color: #888; */
-
 }
 
 #socials--list a:hover{
@@ -173,27 +150,20 @@ i{
     font-size: 1.1em;
 }
 
-/* #socials--list i{
-    font-weight: 300;
-    color: var(--secondaryTextColor);
-    font-size: 1.em;
-    transition: 0.3s;
-}
-
-#socials--list i:hover{
-    font-weight: 100;
-    color: var(--mainLinkColor);
-    font-size: 1.8em;
-} */
-
 #qualifications--list{
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    width: 450px;
+    padding-left: 0rem;
 }
 
 #qualifications--list div{
     display: flex;
     justify-content: flex-start;
-    column-gap: 1em;
+    /* column-gap: 1em; */
     flex-wrap: wrap;
     padding-bottom: 2px;
 }
@@ -207,16 +177,11 @@ i{
     color: #0393D7;
 }
 
-/* #qualifications--list i{
-    font-size: 20px;
-    margin-right: 10px;
-} */
-
 #wrapper--techstack__items{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 1.1em;
+    font-size: 0.8em;
 }
 
 .card--techstack{
@@ -268,8 +233,18 @@ i{
         font-size: 0.8em;
     }
 
+    #qualifications--list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+        width: 380px;
+        padding-left: 0rem;
+        /* margin-right: 1rem; */
+    }
+
     #qualifications--list a{
-        font-size: 0.8em;
+        font-size: 0.7em;
         /* color: var(--secondaryTextColor); */
     }
 
@@ -279,12 +254,88 @@ i{
     }
 
     #profile-pic{
-        width: 200px;
-        height: 200px;
+        width: 120px;
+        height: 120px;
     }
 
     #wrapper--hero{
         flex-direction: column;
+    }
+
+    #user-name{
+        font-size: 30px;
+        line-height: 1em;
+    }
+
+    .card--work-history{
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+@media(max-width:600px){
+    
+    #socials--list{
+        justify-content: center;
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width:280px){
+
+    .section--page{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    p, span, li{
+        color: var(--secondaryTextColor);
+        font-size: 0.6em;
+    }
+
+    #socials--list{
+        font-size: 0.6em;
+    }
+
+    #qualifications--list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 280px;
+        padding-left: 10px;
+        /* margin-right: 1rem; */
+    }
+
+    #qualifications--list a{
+        font-size: 0.5em;
+        padding-left: 0px;
+        /* color: var(--secondaryTextColor); */
+    }
+
+    #wrapper--hero{
+        display: flex;
+        align-items: center;
+    }
+
+    #profile-pic{
+        width: 120px;
+        height: 120px;
+    }
+
+    #wrapper--hero{
+        flex-direction: column;
+    }
+
+    #user-name{
+        font-size: 26px;
+        line-height: 1em;
+    }
+    
+    #user-name span{
+        font-size: 34px;
+        line-height: 1em;
+        font-weight: 800;
+        color: #0393D7;
     }
 
     .card--work-history{
