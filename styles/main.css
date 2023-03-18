@@ -55,7 +55,7 @@ i{
 #container--main{
     max-width: 380px;
     margin: 0 auto;
-    padding: 0.8em;
+    padding-right: 0.2em;
 }
 
 .section--page{
@@ -89,13 +89,19 @@ i{
 }
 
 #bio, a{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
 }
 
-#user-name span{
-    font-size: 34px;
+#user-name{
+    font-size: 20px;
     font-weight: 400;
+    /* color: #0393D7; */
+}
+
+#user-name span{
+    font-size: 30px;
+    font-weight: 800;
     color: #0393D7;
 }
 
@@ -121,8 +127,8 @@ i{
     height: 100px;
     object-fit: cover;
     border-radius: 8%;
-    margin-right: 20px;
-    margin-left: 20px;
+    /* margin-right: 20px;
+    margin-left: 20px; */
 }
 
 #profile-pic-name--main{
