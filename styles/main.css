@@ -21,7 +21,6 @@
 
 }
 
-
 *{
     font-family: 'Readex Pro';
     line-height: 1.5em;
@@ -38,13 +37,13 @@ p, span, li{
     color: var(--secondaryTextColor);
     font-size: 0.9em;
     font-weight: 300;
-    line-height: 1.9em;
+    line-height: 1.8em;
 }
 
 a{
     text-decoration: none;
     color: var(--mainLinkColor);
-    font-weight: 600;
+    font-weight: 900;
 }
 
 i{
@@ -53,14 +52,29 @@ i{
 }
 
 #container--main{
-    max-width: 380px;
+    max-width: 340px;
     margin: 0 auto;
-    padding-right: 0.2em;
+}
+
+#logo--main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+#profile--main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 0.8em;
 }
 
 .section--page{
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
+    padding-top: 0.4em;
+    padding-bottom: 1.8em;
+    margin: 0 auto;
+    /* margin-left: 5px; */
 }
 
 .section-page-title-icon{
@@ -72,6 +86,10 @@ i{
     color: #0393D7;
     font-size: 40px;
     cursor: pointer;
+}
+
+#welcome-notes span{
+    color: #0393D7;
 }
 
 #wrapper--hero{
@@ -100,13 +118,7 @@ i{
 }
 
 #user-name span{
-    font-size: 30px;
-    font-weight: 800;
-    color: #0393D7;
-}
-
-#welcome-notes span{
-    font-size: 10px;
+    font-size: 2em;
     font-weight: 800;
     color: #0393D7;
 }
@@ -116,27 +128,26 @@ i{
     height: 20px;
 }
 
-#logo--main{
+#profile--name{
     display: flex;
-    justify-content: right;
-
+    /* justify-content: right; */
 }
 
 #profile-pic{
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 8%;
+    border-radius: 15%;
     /* margin-right: 20px;
     margin-left: 20px; */
 }
 
 #profile-pic-name--main{
-    list-style: none;
+    /* list-style: none; */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
     width: 380px;
     /* padding-left: 0rem; */
 }
@@ -190,11 +201,11 @@ i{
     align-items: center;
 }
 
-.date{
+/* .date{
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-}
+} */
 
 .card--work-history{
     display: flex;
@@ -216,7 +227,9 @@ i{
 }
 
 .responsibility-list li{
-    font-size: 12px;
+    font-size: 0.6em;
+    font-weight: 500;
+    margin-right: 0.1em;
 }
 
 .line-break{
@@ -237,7 +250,7 @@ i{
 
 .card--project{
     border-left: 1px solid var(--mainBorderColor);
-    padding-left: 0.8em;
+    /* padding-left: 0.8em; */
 }
 
 .card--project a{
