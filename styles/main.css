@@ -61,22 +61,45 @@ i{
     margin: 0 auto;
 }
 
-#logo--main{
+#profile--wrapper{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 0.8em;
+    flex-direction: column;
 }
 
-#profile--main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    font-size: 0.8em;
+#profile--wrapper div{
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#profile--wrapper .logo{
+    justify-content: center;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+}
+
+#profile--wrapper .welcome{
+    color: #0393D7;
+}
+
+#profile--wrapper .profile{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 45%;
+}
+
+#profile--wrapper .name{
+    color: #0393D7;
+    text-shadow: 0 0 1px #111;
+}
+
+#profile--wrapper .qa{
+    padding-bottom: -8em;
 }
 
 .section--page{
-    padding-top: 0.4em;
+    padding-top: 0.2em;
     padding-bottom: 0.8em;
     margin: 0 auto;
     /* margin-left: 5px; */
@@ -116,33 +139,9 @@ i{
     font-weight: 300;
 }
 
-#user-name{
-    font-size: 20px;
-    font-weight: 400;
-    /* color: #0393D7; */
-}
-
-#user-name span{
-    font-size: 2em;
-    font-weight: 800;
-    color: #0393D7;
-}
-
-#logo{
-    width: 20px;
-    height: 20px;
-}
-
 #profile--name{
     display: flex;
     /* justify-content: right; */
-}
-
-#profile-pic{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 15%;
 }
 
 #socials--list{
